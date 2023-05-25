@@ -8,15 +8,6 @@ public class AddressBook {
     Create ArrayList of Contact object called contact
     for store the contact of each person.
  */
-    private String AddressbookName;
-
-    public String getAddressbookName() {
-        return AddressbookName;
-    }
-
-    public void setAddressbookName(String addressbookName) {
-        AddressbookName = addressbookName;
-    }
     ArrayList<Contact> contactBook = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
     public void AddContact(){
@@ -111,12 +102,5 @@ public class AddressBook {
             }
         }
         System.out.println("Contact deleted!!!!");
-    }
-    @Override
-    public String toString() {
-        return "AddressBook{" +
-                "AddressbookName='" + AddressbookName + '\'' +
-                ", contactBook=" + contactBook +
-                '}';
     }
 }
