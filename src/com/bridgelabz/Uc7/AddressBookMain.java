@@ -48,7 +48,7 @@ public class AddressBookMain {
         String name = sc.next();
         if(hashMap.containsKey(name)){
             AddressBook temp = hashMap.get(name);
-            temp.delete();
+            temp.deleteContact();
         }
     }
     public void Edit(){
@@ -57,7 +57,7 @@ public class AddressBookMain {
         String name = sc.next();
         if(hashMap.containsKey(name)){
             AddressBook temp = hashMap.get(name);
-            temp.Edit();
+            temp.editContact();
         }
     }
     public void displayAllAddressbook(){

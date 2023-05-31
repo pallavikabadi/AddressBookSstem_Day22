@@ -1,4 +1,4 @@
-package com.bridgelabz.Uc7;
+package com.bridgelabz.Uc8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,18 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 
-public class AddressBook extends Collection{
+public class AddressBook extends Collection {
     /*
     Create ArrayList of Contact object called contact
     for store the contact of each person.
  */
+    public ArrayList<Contact> getContact() {
+        return contacts;
+    }
+    public void setContact(ArrayList<Contact> contact){
+        this.contacts = contact;
+    }
+
     private String addressBookName;
 
     public AddressBook(String addressBookName) {
@@ -171,11 +178,13 @@ public class AddressBook extends Collection{
         System.out.println(contacts);
     }
 
-    public void setAddressbookName(String addressBookName) {
-        this.addressBookName = addressBookName;
+
+
+
+    public void setAddressBookName(String addressBookName) {this.addressBookName = addressBookName;
     }
 
-    public String getAddressbookName() {
+    public Object getAddressBookName() {
         return addressBookName;
     }
 }
