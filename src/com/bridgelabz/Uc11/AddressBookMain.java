@@ -161,7 +161,7 @@ public class AddressBookMain extends Collection {
         Scanner scanner = new Scanner(System.in);
         while (true){
             System.out.println("---Address Book---");
-            System.out.println("1. Add AddressBook \n2. Add Contact \n3. Edit Contact \n4. Delete Contact \n5. Display Contact \n6. Search State \n7. Search City\n");
+            System.out.println("1. Add AddressBook \n2. Add Contact \n3. Edit Contact \n4. Delete Contact \n5. Display Contact \n6. Search State \n7. Search City\n8. Sort By Person's Name");
             System.out.println("Choose any Number : ");
 
             int choice = scanner.nextInt();
